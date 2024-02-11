@@ -79,7 +79,7 @@ export default function Home() {
     <div
       className="flex min-h-screen w-full flex-col items-center justify-center gap-12 sm:flex-row lg:gap-24"
       style={{
-        backgroundColor: isRecording ? "rgb(251,241,240)" : "rgb(243,245,235)",
+        backgroundColor: isRecording ? "rgb(254,248,247)" : "rgb(243,245,235)",
       }}
     >
       <div className="flex items-center justify-center">
@@ -97,40 +97,70 @@ export default function Home() {
           <ul className={"space-y-1.5 "}>
             <li
               className={
-                "rounded-b-md rounded-t-xl bg-zinc-500/30 px-6 py-4 transition" +
+                "rounded-b-md rounded-t-xl px-6 py-4 transition" +
                 (decibels > 90 ? " !bg-red-500/30" : "")
               }
+              style={{
+                backgroundColor: isRecording
+                  ? "rgb(249,235,233)"
+                  : "rgb(220,231,205)",
+              }}
             ></li>
             <li
               className={
-                "rounded-md bg-zinc-500/30 px-6 py-4 transition" +
+                "rounded-md px-6 py-4 transition" +
                 (decibels > 85 ? " !bg-yellow-500/30" : "")
               }
+              style={{
+                backgroundColor: isRecording
+                  ? "rgb(249,235,233)"
+                  : "rgb(220,231,205)",
+              }}
             ></li>
             <li
               className={
-                "rounded-md bg-zinc-500/30 px-6 py-4 transition" +
+                "rounded-md px-6 py-4 transition" +
                 (decibels > 75 ? " !bg-yellow-500/30" : "")
               }
+              style={{
+                backgroundColor: isRecording
+                  ? "rgb(249,235,233)"
+                  : "rgb(220,231,205)",
+              }}
             ></li>
             <li
               className={
-                "rounded-md bg-zinc-500/30 px-6 py-4 transition" +
+                "rounded-md px-6 py-4 transition" +
                 (decibels > 70 ? " !bg-green-500/30" : "")
               }
+              style={{
+                backgroundColor: isRecording
+                  ? "rgb(249,235,233)"
+                  : "rgb(220,231,205)",
+              }}
             ></li>
 
             <li
               className={
-                "rounded-md bg-zinc-500/30 px-6 py-4 transition" +
+                "rounded-md px-6 py-4 transition" +
                 (decibels > 60 ? " !bg-green-500/30" : "")
               }
+              style={{
+                backgroundColor: isRecording
+                  ? "rgb(249,235,233)"
+                  : "rgb(220,231,205)",
+              }}
             ></li>
             <li
               className={
-                "rounded-md rounded-b-xl bg-zinc-500/30 px-6 py-4 transition" +
+                "rounded-md rounded-b-xl px-6 py-4 transition" +
                 (decibels > 0 ? " !bg-green-500/30" : "")
               }
+              style={{
+                backgroundColor: isRecording
+                  ? "rgb(249,235,233)"
+                  : "rgb(220,231,205)",
+              }}
             ></li>
           </ul>
           <span className="text-xl font-semibold tracking-tight text-zinc-600">
@@ -141,11 +171,11 @@ export default function Home() {
           {isRecording ? (
             <button
               onClick={() => setIsRecording(false)}
-              className="group relative flex h-72 w-72 flex-col items-center justify-center rounded-[64px]  border-zinc-700 bg-red-500/10 shadow-lg shadow-black/25 transition hover:bg-red-500/20 hover:shadow-xl hover:shadow-black/25 active:bg-red-500/30 active:shadow-sm"
+              className="group relative flex h-72 w-72 flex-col items-center justify-center rounded-[64px]  border-zinc-700 shadow-lg shadow-black/25 transition hover:shadow-xl active:shadow-sm"
               style={{ backgroundColor: "rgb(249,219,218)" }}
             >
               <Power
-                className="h-32 w-32 text-red-950 transition group-hover:-translate-y-3"
+                className="h-32 w-32 transition group-hover:-translate-y-3"
                 strokeWidth={1.3}
                 style={{ color: "rgb(55,10,14)" }}
               />
@@ -159,16 +189,16 @@ export default function Home() {
           ) : (
             <button
               onClick={() => setIsRecording(true)}
-              className="group relative flex h-72 w-72 flex-col items-center justify-center rounded-[64px]  border-zinc-700 bg-green-500/10 shadow-lg shadow-black/25 transition hover:bg-green-500/20 hover:shadow-xl hover:shadow-black/25 active:bg-green-500/30 active:shadow-sm"
+              className="group relative flex h-72 w-72 flex-col items-center justify-center rounded-[64px]  border-zinc-700 shadow-lg shadow-black/25 transition hover:shadow-xl hover:shadow-black/25 active:shadow-sm"
               style={{ backgroundColor: "rgb(202,239,172)" }}
             >
               <Play
-                className="h-32 w-32 text-green-950 transition group-hover:-translate-y-3"
+                className="h-32 w-32 transition group-hover:-translate-y-3"
                 strokeWidth={1.3}
                 style={{ color: "rgb(14,32,4)" }}
               />
               <span
-                className="absolute bottom-12 text-2xl font-semibold tracking-tight text-green-950 opacity-0 transition group-hover:-translate-y-3 group-hover:opacity-100"
+                className="absolute bottom-12 text-2xl font-semibold tracking-tight opacity-0 transition group-hover:-translate-y-3 group-hover:opacity-100"
                 style={{ color: "rgb(14,32,4)" }}
               >
                 Start
