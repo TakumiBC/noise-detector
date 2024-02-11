@@ -17,7 +17,7 @@ using [React](https://react.dev/), [Next.js](https://nextjs.org/), [TypeScript](
 
 ## Getting Started
 
-To get started with this project, clone the repository and install the dependencies using npm:
+To get started with this project, clone the repository and install the dependencies using pnpm:
 
 ```zsh
 git clone https://github.com/TakumiBC/noise-detector.git
