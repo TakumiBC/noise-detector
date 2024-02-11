@@ -109,7 +109,7 @@ export default function Home() {
             <li
               className={
                 "rounded-md px-6 py-4 transition" +
-                (decibels > 85 ? " !bg-yellow-500/30" : "")
+                (decibels > 85 ? " !bg-red-500/30" : "")
               }
               style={{
                 backgroundColor: isRecording
@@ -131,7 +131,7 @@ export default function Home() {
             <li
               className={
                 "rounded-md px-6 py-4 transition" +
-                (decibels > 70 ? " !bg-green-500/30" : "")
+                (decibels > 70 ? " !bg-yellow-500/30" : "")
               }
               style={{
                 backgroundColor: isRecording
