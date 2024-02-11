@@ -15,7 +15,7 @@ export default function Home() {
 
   useEffect(() => {
     let audioContext: any, microphone, analyser: any, intervalId: any;
-    console.log("Made by Bright Li, Maz, Scott Chiang, Thomas Wu");
+    console.log("Made by Bright Li, Lucas, Maz, Scott Chiang, Thomas Wu");
 
     async function startRecording() {
       try {
