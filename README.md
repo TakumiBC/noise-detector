@@ -1,5 +1,7 @@
 # Noise Detector
 
+https://noise-detector.vercel.app/
+
 This project was created by Bright Li, Maz, Scott Chiang, and Thomas Wu at [The Summit](https://summit.hackclub.com/), a high school CS club leader hackathon held by [Hack Club](https://hackclub.com) at San Francisco during February 9th-11th, 2024.
 
 ## Hackathon Prompt
